@@ -82,6 +82,7 @@ body {
 .link {
     width: fit-content;
     color: #CC9933;
+    transition: all 0.3s ease;
 }
 
 .btn {
@@ -90,6 +91,7 @@ body {
     border-radius: 10px;
     color: #CC9933;
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .btn:focus {
@@ -168,6 +170,7 @@ body {
     font-weight: 500;
     font-size: 20px;
     color: #666;
+    transition: all 0.3s ease;
 }
 
 .contact-link:focus {
@@ -262,14 +265,16 @@ body {
 
 .card-1 {
     margin-bottom: 24px;
-    background-image: url(../images/offer-1.jpg);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%),
+                url(../images/offer-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
 }
 
 .card-2 {
-    background-image: url(../images/offer-2.jpg);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%),
+                url(../images/offer-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -280,7 +285,8 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     padding: 40px 249px 40px 45px;
-    background-image: url(../images/offer-3.jpg);
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%),
+                url(../images/offer-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
@@ -423,6 +429,7 @@ body {
     padding: 116px 42px 32px 45px;
     border-radius: 15px;
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 .advantages-list-item:hover {
@@ -564,6 +571,23 @@ body {
     font-size: 20px;
     line-height: 200%;
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+.accommodation-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+}
+
+.accommodation-link:hover {
+    color: #f0bf5f;
+}
+
+.accommodation-link:active {
+    padding-right: 0;
+    color: #a47312;
+    outline: none;
 }
 
 /* tour-search */
@@ -719,4 +743,17 @@ body {
 .footer-link:active {
     color: #a47312;
     outline: none;
+}
+
+.footer-link svg {
+    fill: #999;
+    transition: all 0.3s ease;
+}
+
+.footer-link svg:hover,  .footer-link svg:focus {
+    fill: #CC9933;
+}
+
+.footer-link svg:active {
+    fill: #A47312;
 }
