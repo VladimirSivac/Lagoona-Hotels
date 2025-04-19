@@ -92,14 +92,20 @@ body {
     background-color: #fff;
 }
 
-.btn:hover, .btn:focus {
+.btn:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+}
+
+.btn:hover{
     color: #fff;
     background-color: #CC9933;
 }
 
 .btn:active {
     color: #fff;
-    background-color: #A47312;
+    background: #a47312;
+    outline: none;
 }
 
 .flex {
@@ -164,12 +170,48 @@ body {
     color: #666;
 }
 
+.contact-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+}
+
+.contact-link:hover {
+    color: #c93;
+}
+
+.contact-link:active {
+    color: #a47312;
+    outline: none;
+}
+
 .header-link {
     padding-left: 29px;
     background-image: url(../images/arrow-1.svg);
     background-position: left center;
     background-size: 24px;
     background-repeat: no-repeat;
+}
+
+.header-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+    background-image: ;
+}
+
+.header-link:hover {
+    color: #f0bf5f;
+    background-image: url(../images/arrow-1-hover.svg);
+    background-position: left center;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.header-link:active {
+    background-image: url(../images/arrow-1.svg);
+    color: #a47312;
+    outline: none;
 }
 
 .header-nav {
@@ -179,6 +221,21 @@ body {
 .header-list-item {
     font-size: 16px;
     color: #666;
+}
+
+.header-list-item :only-child:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+}
+
+.header-list-item :only-child:hover {
+    color: #c93;
+}
+
+.header-list-item :only-child:active {
+    color: #a47312;
+    outline: none;
 }
 
 .header-list-item:not(:last-child) {
@@ -263,6 +320,23 @@ body {
     font-size: 16px;
 }
 
+.offers-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+}
+
+.offers-link:hover {
+    padding-right: 25px;
+    color: #f0bf5f;
+}
+
+.offers-link:active {
+    padding-right: 15px;
+    color: #a47312;
+    outline: none;
+}
+
 /* about */
 
 .about-text {
@@ -320,6 +394,23 @@ body {
     line-height: 200%;
 }
 
+.services-title :only-child:focus {
+    outline: 1px solid #c93;
+    outline-offset: 5px;
+    color: #c93;
+}
+
+.services-title :only-child:hover {
+    padding-right: 20px;
+    color: #f0bf5f;
+}
+
+.services-title :only-child:active {
+    padding-right: 0;
+    color: #a47312;
+    outline: none;
+}
+
 /* advantages */
 
 .advantages-list {
@@ -332,6 +423,10 @@ body {
     padding: 116px 42px 32px 45px;
     border-radius: 15px;
     background-color: #fff;
+}
+
+.advantages-list-item:hover {
+    background-color: #f0bf5f;
 }
 
 .advantages-item-1 {
@@ -553,6 +648,21 @@ body {
     line-height: 150%;
 }
 
+.contacts-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 2px;
+    color: #c93;
+}
+
+.contacts-link:hover {
+    color: #f0bf5f;
+}
+
+.contacts-link:active {
+    color: #a47312;
+    outline: none;
+}
+
 .btn-contacts {
     padding: 30px;
 }
@@ -594,4 +704,19 @@ body {
 .footer-link {
     display: block;
     line-height: 150%;
+}
+
+.footer-link:focus {
+    outline: 1px solid #c93;
+    outline-offset: 2px;
+    color: #c93;
+}
+
+.footer-link:hover {
+    color: #f0bf5f;
+}
+
+.footer-link:active {
+    color: #a47312;
+    outline: none;
 }
